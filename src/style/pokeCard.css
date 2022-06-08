@@ -27,6 +27,15 @@
   margin-top: 2rem;
 }
 
+#pokeName{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.arrow{
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 40rem){
 
 

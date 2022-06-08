@@ -14,9 +14,6 @@ function App() {
     const fetchItems = async () => {
       try {
         const result = await axios(url)
-        if (url.length > 0) {
-          console.log(result.data);
-        }
         setItem(result.data)
       } catch (err) {
         console.log(err)
@@ -31,7 +28,7 @@ function App() {
       <Header />
       <div className='searchBox'>
         <PokeSearch getUrl={(u) => setUrl(u)} />
-        <CharacterCard item={item}/>
+        <CharacterCard item={item} getUrl={(u) => setUrl(u)}/>
       </div>
     </div>
   );

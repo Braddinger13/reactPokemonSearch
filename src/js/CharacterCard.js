@@ -1,18 +1,37 @@
 import React from "react";
 import "../style/pokeCard.css";
 import PokeStats from "./PokeStats";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const CharacterCard = ({ item }) => {
+const CharacterCard = ({ item, getUrl }) => {
   var pokeImgStr = "pokemon/" + item.id + ".png";
   var pokeName = item.name || " ";
   var typeList = item.types || [];
 
-  console.log(item);
+  const backClick = () => {
+    if (item.id > 1) {
+      const newId = item.id - 1;
+      getUrl(`https://pokeapi.co/api/v2/pokemon/` + newId);
+    }
+  };
+
+  const forwardClick = (e) => {
+    if (item.id < 898) {
+      const newId = item.id + 1;
+      getUrl(`https://pokeapi.co/api/v2/pokemon/` + newId);
+    }
+  };
+
   return (
     <div className="pokeCard">
       <div className="picName">
         <h3>
-          {pokeName[0].toUpperCase() + pokeName.slice(1)} (#{item.id})
+          <FontAwesomeIcon className="arrow" icon={faArrowLeft} onClick={backClick} />
+          <span id="pokeName">
+            {pokeName[0].toUpperCase() + pokeName.slice(1)} (#{item.id})
+          </span>
+          <FontAwesomeIcon className="arrow" icon={faArrowRight} onClick={forwardClick} />
         </h3>
         <img id="searchRes" width={200} src={pokeImgStr} alt="" />
       </div>
