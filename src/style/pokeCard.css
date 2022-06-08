@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+.pokeCard {
+  
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  padding-top: 2rem;
+  font-family: 'Joan', serif;
+}
+
+.pokeInfo{
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.infoDiv{
+  margin-left: 0rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 40rem){
+
+
+  .pokeInfo{
+    flex-direction: row;
+    margin: auto;
+    width: 50%;
+  }
+
+  .infoDiv{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+
+  .infoDiv * {
+    margin-top: 1rem;
+  }
+
+}
+

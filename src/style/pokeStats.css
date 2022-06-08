@@ -1,0 +1,50 @@
+.statBar {
+  background-color: bisque;
+  border-radius: 5rem;
+  height: 1.3rem;
+  width: 255px;
+  margin: auto;
+}
+
+.hp .statFill {
+  background-color: rgb(237, 92, 92);
+  width: 40px;
+  height: 1.3rem;
+  border-radius: 5rem;
+}
+
+.attack .statFill {
+  background-color: #F78247;
+  width: 40px;
+  height: 1.3rem;
+  border-radius: 5rem;
+}
+
+.defense .statFill {
+  background-color: rgb(102, 176, 43);
+  width: 40px;
+  height: 1.3rem;
+  border-radius: 5rem;
+}
+
+.special-attack .statFill {
+  background-color: rgb(240, 144, 10);
+  width: 40px;
+  height: 1.3rem;
+  border-radius: 5rem;
+}
+
+.special-defense .statFill {
+  background-color: rgb(12, 164, 98);
+  width: 40px;
+  height: 1.3rem;
+  border-radius: 5rem;
+}
+
+.speed .statFill {
+  background-color: rgb(224, 236, 69);
+  width: 40px;
+  height: 1.3rem;
+  border-radius: 5rem;
+}
+
