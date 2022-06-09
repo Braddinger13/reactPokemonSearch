@@ -2,14 +2,13 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: rgb(180, 180, 180);
 }
 
 .App {
   text-align: center;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -22,29 +21,33 @@ body{
 }
 
 .header {
-  color: #FECA1B;
+  color: #feca1b;
   font-size: 4rem;
 }
 
 .header h4 {
   -webkit-text-stroke-width: 0.2rem;
-  -webkit-text-stroke-color: #2C72B8;
+  -webkit-text-stroke-color: #2c72b8;
 }
 
-.header p{
+.header p {
   font-size: 1.5rem;
   -webkit-text-stroke-width: 0.05rem;
-  -webkit-text-stroke-color: #2C72B8;
+  -webkit-text-stroke-color: #2c72b8;
 }
 
 #searchSelect {
   background-color: blue;
 }
 
-.searchBtn{
+.autoSearchBox {
+  
+}
+
+.searchBtn {
   margin-left: 0.5rem;
 }
 
-#searchDropdown{
+#searchDropdown {
   margin-left: 0.5rem;
 }
