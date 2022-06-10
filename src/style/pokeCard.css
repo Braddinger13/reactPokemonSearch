@@ -14,14 +14,6 @@
   font-family: 'Joan', serif;
 }
 
-.pokeInfo{
-  padding-left: 2rem;
-  margin-bottom: 2rem;
-
-  display: flex;
-  flex-direction: column;
-}
-
 .infoDiv{
   margin-left: 0rem;
   margin-top: 2rem;
@@ -37,13 +29,6 @@
 }
 
 @media only screen and (min-width: 40rem){
-
-
-  .pokeInfo{
-    flex-direction: row;
-    margin: auto;
-    width: 50%;
-  }
 
   .infoDiv{
     font-size: 1.3rem;
